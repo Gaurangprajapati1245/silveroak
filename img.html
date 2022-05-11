@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<style type="text/css">
+			.container-img {
+			  position: relative;
+			  width: 300px;
+			}
+
+			.image {
+			  display: block;
+			  width: 400px;
+			  height: 400px;
+			  transition:1s;
+			  margin-top: 40%;
+			  box-shadow: 25px 50px 52px rgba(79, 61, 247, 0.7);
+
+			}
+
+			.overlay {
+			  position:absolute;
+			  top: 0;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  height: 100%;
+			  opacity:0;
+			  transition: 1s;
+			  background-color:rgba(230, 230, 230, 0.7);
+			}
+
+			.container-img:hover .overlay {
+			  opacity:1;
+			}
+			.container-img:hover .image {
+			  
+			  transform:rotate(360deg);
+
+			 
+			}
+			h2
+			{
+				color: rgb(238, 238, 238);
+			}
+		</style>
+	</head>
+	<body bgcolor="black">
+		<h2>Image Overlay Effect</h2>
+		<center>
+		<div class="container-img">
+			<img src="eye.jpg" alt="Demo Image" class="image">
+			<div class="overlay">
+				
+		    </div>
+		</div>
+		</center>
+	</body>
+</html>
